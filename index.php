@@ -45,6 +45,7 @@
 
         // Working with numbers in php
         $num = 10;
+        echo '<h4>Working with numbers</h4>';
         echo -47;
         echo "<br>";
         echo 5+9;
@@ -57,11 +58,17 @@
         echo "<br>";
         echo $num;
         echo "<br>";
-        echo "<br>";
+        echo "<br>";        
 
 
-        $siteOwner = 'Not Patrick';
-        echo "<footer>This is now $siteOwner's site."
+        // $siteOwner = 'Not Patrick';
+        // echo "<footer>This is now $siteOwner's site."
     ?>
+
+    <form action="index.php" method="get">
+        Name:
+        <input type="text" name="name">
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
