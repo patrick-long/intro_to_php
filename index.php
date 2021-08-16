@@ -7,6 +7,26 @@
     <title>Document</title>
 </head>
 <body>
+
+    <form action="index.php" method="get">
+        Name:
+        <input type="text" name="name" placeholder='e.g. "Patrick"'>
+        <input type="number" name="age" placeholder="e.g. 21">
+        <input type="submit" value="Submit">
+    </form>
+
+    Your name is 
+    <?php 
+        echo $_GET['name'];
+    ?>.
+    
+    <br>
+    Your age is
+    <?php
+        echo $_GET['age'];
+    ?>.
+
+    
     <?php
         $siteOwner = 'Patrick';
         echo("<h1>$siteOwner's site</h1>");
@@ -65,10 +85,6 @@
         // echo "<footer>This is now $siteOwner's site."
     ?>
 
-    <form action="index.php" method="get">
-        Name:
-        <input type="text" name="name" placeholder=' e.g. "Patrick"'>
-        <input type="submit" value="Submit">
-    </form>
+
 </body>
 </html>
