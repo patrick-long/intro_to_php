@@ -11,6 +11,7 @@
     <form action="index.php" method="get">
         Name:
         <input type="text" name="name" placeholder='e.g. "Patrick"'>
+        Age:
         <input type="number" name="age" placeholder="e.g. 21">
         <input type="submit" value="Submit">
     </form>
