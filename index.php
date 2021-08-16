@@ -12,6 +12,9 @@
         echo("<h1>$siteOwner's site</h1>");
         echo "<hr>";
         echo "<p>This is my site</p>";
+        echo strtolower($siteOwner);
+        echo "<br>";
+        echo strtoupper($siteOwner);
 
         // Working with data types in php
         // Strings
