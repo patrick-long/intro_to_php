@@ -12,6 +12,9 @@
         echo("<h1>$siteOwner's site</h1>");
         echo "<hr>";
         echo "<p>This is my site</p>";
+
+        $siteOwner = 'Not Patrick';
+        echo "<footer>This is now $siteOwner's site."
     ?>
 </body>
 </html>
