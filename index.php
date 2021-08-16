@@ -8,7 +8,8 @@
 </head>
 <body>
     <?php
-        echo("<h1>Patrick's site</h1>");
+        $siteOwner = 'Patrick';
+        echo("<h1>$siteOwner's site</h1>");
         echo "<hr>";
         echo "<p>This is my site</p>";
     ?>
