@@ -13,6 +13,22 @@
         echo "<hr>";
         echo "<p>This is my site</p>";
 
+        // Working with data types in php
+        // Strings
+        $phrase = 'To be or not to be';
+
+        // Numbers
+        $age = 30;
+
+        // Floats
+        $gpa = 3.75;
+
+        // Booleans
+        $isTrue = false;
+
+        // Null
+        $nothingness = null;
+
         $siteOwner = 'Not Patrick';
         echo "<footer>This is now $siteOwner's site."
     ?>
