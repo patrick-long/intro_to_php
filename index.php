@@ -67,7 +67,7 @@
 
     <form action="index.php" method="get">
         Name:
-        <input type="text" name="name">
+        <input type="text" name="name" placeholder=' e.g. "Patrick"'>
         <input type="submit" value="Submit">
     </form>
 </body>
