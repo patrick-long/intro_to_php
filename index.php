@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <form action="index.php" method="get">
+    <!-- <form action="index.php" method="get">
         Name:
         <input type="text" name="name" placeholder='e.g. "Patrick"'>
         Age:
@@ -16,16 +16,26 @@
         <input type="submit" value="Submit">
     </form>
 
-    Your name is 
+    Your name is  -->
     <?php 
-        echo $_GET['name'];
-    ?>.
-    
+        // echo $_GET['name'];
+    ?>
+<!--     
     <br>
-    Your age is
+    Your age is -->
     <?php
-        echo $_GET['age'];
-    ?>.
+        // echo $_GET['age'];
+    ?>
+
+    <form action="index.php" method="get">
+        Number 1:<input type="number" name="num1">
+        Number 2:<input type="number" name="num2">
+        <input type="submit" value="Submit">
+    </form>
+
+    <?php 
+        echo $_GET['num1'] + $_GET['num2'];
+    ?>
 
     
     <?php
