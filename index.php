@@ -44,6 +44,7 @@
         $nothingness = null;
 
         // Working with numbers in php
+        $num = 10;
         echo -47;
         echo "<br>";
         echo 5+9;
@@ -52,7 +53,9 @@
         echo "<br>";
         echo 10 % 3;
         echo "<br>";
-        echo (4 + 5) * 10;
+        echo (4 + 5) * $num;
+        echo "<br>";
+        echo $num;
         echo "<br>";
         echo "<br>";
 
