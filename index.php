@@ -52,6 +52,8 @@
         echo "<br>";
         echo 10 % 3;
         echo "<br>";
+        echo (4 + 5) * 10;
+        echo "<br>";
         echo "<br>";
 
 
