@@ -27,17 +27,29 @@
         // echo $_GET['age'];
     ?>
 
-    <form action="index.php" method="get">
+    <!-- Create number inputs for calculator -->
+    <!-- <form action="index.php" method="get">
         Number 1:<input type="number" name="num1">
         Number 2:<input type="number" name="num2">
         <input type="submit" value="Submit">
-    </form>
+    </form> -->
 
-    <?php 
+    <!-- <?php 
         echo $_GET['num1'] + $_GET['num2'];
+    ?> -->
+
+    <!-- Create password input for talking about GET and POST methods -->
+    <form action="index.php" method="get">
+        Password: <input type="password" name="password">
+        <input type="submit" value="Submit">
+    </form>
+    <br><br>
+
+    <?php
+        echo $_GET['password'];
     ?>
 
-    
+
     <?php
         $siteOwner = 'Patrick';
         echo("<h1>$siteOwner's site</h1>");
