@@ -39,14 +39,14 @@
     ?> -->
 
     <!-- Create password input for talking about GET and POST methods -->
-    <form action="index.php" method="get">
+    <form action="index.php" method="post">
         Password: <input type="password" name="password">
         <input type="submit" value="Submit">
     </form>
     <br><br>
 
     <?php
-        echo $_GET['password'];
+        echo $_POST['password'];
     ?>
 
 
