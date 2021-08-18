@@ -240,31 +240,62 @@
 
     <!-- Defining object functions in php -->
     <?php 
-        class Student {
-            var $name;
-            var $major;
-            var $gpa;
+        // class Student {
+        //     var $name;
+        //     var $major;
+        //     var $gpa;
 
-            function __construct ($name, $major, $gpa) {
-                $this -> name = $name;
-                $this -> major = $major;
-                $this -> gpa = $gpa;
+        //     function __construct ($name, $major, $gpa) {
+        //         $this -> name = $name;
+        //         $this -> major = $major;
+        //         $this -> gpa = $gpa;
+        //     }
+
+        //     function hasHonors() {
+        //         if ($this -> gpa >= 3.5) {
+        //             return "true";
+        //         }
+        //         return "false";
+        //     }
+        // }
+
+        // $student1 = new Student ("Patrick", "Computer Science", 3.75);
+        // $student2 = new Student ("Abigayle", "Graphic Design", 4.0);
+
+        // echo $student1 -> hasHonors();
+        // echo $student2 -> hasHonors();
+
+    ?>
+
+
+    <?php
+        class Movie {
+            public $title;
+            private $rating;
+
+            function __construct($title, $rating) {
+                $this -> title = $title;
+                $this -> rating = $rating;
             }
 
-            function hasHonors() {
-                if ($this -> gpa >= 3.5) {
-                    return "true";
+            function getRating() {
+                return $this -> rating;
+            }
+
+            function setRating($rating) {
+                if ($rating == "G" || $rating == "PG" || $rating == "PG-13" || $rating == "R" || $rating == "NR") {
+                    $this -> rating = $rating;
+                } else {
+                    $this -> rating = "NR";
                 }
-                return "false";
             }
         }
 
-        $student1 = new Student ("Patrick", "Computer Science", 3.75);
-        $student2 = new Student ("Abigayle", "Graphic Design", 4.0);
+        $avengers = new Movie("Avengers", "PG-13");
 
-        echo $student1 -> hasHonors();
-        echo $student2 -> hasHonors();
+        $avengers -> setRating(true);
 
+        echo $avengers -> getRating();
     ?>
 
 
