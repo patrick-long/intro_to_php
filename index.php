@@ -198,17 +198,32 @@
 
     <!-- Including other php files -->
     <?php 
-        $title = "My First Post";
-        $author = "Patrick Long";
-        $wordCount = 400;
+        // $title = "My First Post";
+        // $author = "Patrick Long";
+        // $wordCount = 400;
 
-        include "article-header.php";
+        // include "article-header.php";
 
-        include "useful-tools.php";
-        sayHello("Patrick");
+        // include "useful-tools.php";
+        // sayHello($author);
 
-        echo $feetInAMile;
+        // echo $feetInAMile;
     ?>  
+
+    <!-- Working with classes and objects in php -->
+    <?php
+        class Book {
+            var $title;
+            var $author;
+            var $numPages;
+        };
+
+        $book1 = new Book;
+        $book1 -> title = "Harry Potter";
+        $book1 -> author = "J.K. Rowling";
+        $book1 -> numPages = 400;
+        echo $book1->numPages;
+    ?>
 
     <?php
         // $siteOwner = 'Patrick';
