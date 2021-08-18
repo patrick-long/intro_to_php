@@ -187,10 +187,23 @@
     ?>
 
     <!-- Including HTML in php -->
-    <?php include "header.html"; ?>
-    <p>Hello World</p>
-    <?php include "footer.html"; ?>
+    <?php 
+        // include "header.html"; 
+    ?>
+    <!-- <p>Hello World</p> -->
+    <?php 
+        // include "footer.html"; 
+    ?>
 
+
+    <!-- Including other php files -->
+    <?php 
+        $title = "My First Post";
+        $author = "Patrick Long";
+        $wordCount = 400;
+
+        include "article-header.php";
+    ?>  
 
     <?php
         // $siteOwner = 'Patrick';
