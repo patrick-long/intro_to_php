@@ -34,9 +34,9 @@
         <input type="submit" value="Submit">
     </form> -->
 
-    <!-- <?php 
-        echo $_GET['num1'] + $_GET['num2'];
-    ?> -->
+    <?php 
+        // echo $_GET['num1'] + $_GET['num2'];
+    ?>
 
     <!-- Create password input for talking about GET and POST methods -->
     <!-- <form action="index.php" method="post">
@@ -46,13 +46,27 @@
     <br><br>
 
     <?php
-        echo $_POST['password'];
+        // echo $_POST['password'];
     ?> -->
 
 
     <!-- Work with PHP arrays -->
     <?php
-        $friends = array('Kevin', 'Karen', 'Oscar', 'Jim');
+        // $friends = array('Kevin', 'Karen', 'Oscar', 'Jim');
+        // echo $friends[0];
+    ?>
+
+
+    <form action="index.php" method="post">
+        Apples: <input type="checkbox" name="fruits[]" value="apples"><br>
+        Oranges: <input type="checkbox" name="fruits[]" value="oranges"><br>
+        Pears: <input type="checkbox" name="fruits[]" value="pears"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <?php 
+        $fruits = $_POST['fruits'];
+        echo $fruits[0];
     ?>
 
 
