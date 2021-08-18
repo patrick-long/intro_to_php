@@ -85,11 +85,13 @@
 
     <?php
         // Create first function in php
-        function sayHello($name) {
-            echo "Hello $name";
+        function sayHello($name, $age) {
+            echo "Hello $name, you are $age <br>";
         };
 
-        sayHello("Patrick");
+        sayHello("Patrick", 23);
+        sayHello("Mike", 45);
+        sayHello("Andrew", 37);
     ?>
 
 
