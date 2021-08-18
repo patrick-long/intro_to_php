@@ -109,29 +109,61 @@
     ?>
 
     <!-- Create a more complicated calculator -->
-    <form action="index.php" method="post">
+    <!-- <form action="index.php" method="post">
         Number 1: <input type="number" name="num1"><br>
         Operator: <input type="text" name="operator"><br>
         Number 2: <input type="number" name="num2"><br>
         <input type="submit" value="Submit">
+    </form> -->
+
+    <?php
+        // $num1 = $_POST['num1'];
+        // $num2 = $_POST['num2'];
+        // $operator = $_POST['operator'];
+
+        // if ($operator == "+") {
+        //     echo $num1 + $num2;
+        // } elseif ($operator == "-") {
+        //     echo $num1 - $num2;
+        // } elseif ($operator == "*") {
+        //     echo $num1 * $num2;
+        // } elseif ($operator == "/") {
+        //     echo $num1 / $num2; 
+        // } else {
+        //     echo "Invalid operator";
+        // };
+    ?>
+
+    <!-- Work with switch statements in php -->
+    <form action="index.php" method="post">
+        What grade did you get?<br>
+        <input type="text" name="grade"><br>
+        <input type="submit" value="Submit">
     </form>
 
     <?php
-        $num1 = $_POST['num1'];
-        $num2 = $_POST['num2'];
-        $operator = $_POST['operator'];
+        $grade = $_POST['grade'];
 
-        if ($operator == "+") {
-            echo $num1 + $num2;
-        } elseif ($operator == "-") {
-            echo $num1 - $num2;
-        } elseif ($operator == "*") {
-            echo $num1 * $num2;
-        } elseif ($operator == "/") {
-            echo $num1 / $num2; 
-        } else {
-            echo "Invalid operator";
-        };
+        switch ($grade) {
+            case "A": 
+                echo "You did amazing!";
+                break;
+            case "B": 
+                echo "You did pretty good";
+                break;
+            case "C": 
+                echo "You did poorly";
+                break;
+            case "D": 
+                echo "You did very badly";
+                break;
+            case "F": 
+                echo "You failed";
+                break;
+            default: 
+                echo "Please type a valid grade";
+                break;
+        }
     ?>
 
 
