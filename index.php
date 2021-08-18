@@ -72,14 +72,24 @@
 
     <!-- Using associative arrays -->
 
-    <form action="index.php" method="post">
+    <!-- <form action="index.php" method="post">
         <input type="text" name="student">
         <input type="submit" value="Submit">
-    </form>
+    </form> -->
 
     <?php
-        $grades = array("Jim" => 95, "Oscar" => 89, "Pam" => 86);
-        echo $grades[$_POST['student']];
+        // $grades = array("Jim" => 95, "Oscar" => 89, "Pam" => 86);
+        // echo $grades[$_POST['student']];
+    ?>
+
+
+    <?php
+        // Create first function in php
+        function sayHello() {
+            echo "Hello Patrick";
+        };
+
+        sayHello();
     ?>
 
 
