@@ -168,17 +168,22 @@
 
 
     <!-- Working with while loops in php -->
-    <form action="index.php" method="post">
-
-    </form>
-
     <?php
-        $index = 6;
+        // $index = 6;
 
-        do {
-            echo "$index <br>";
-            $index++;
-        } while ($index <= 5);
+        // do {
+        //     echo "$index <br>";
+        //     $index++;
+        // } while ($index <= 5);
+    ?>
+
+    <!-- Working with for loops in php -->
+    <?php
+        $luckyNumbers = array(4, 8, 15, 16, 23, 42);
+
+        for ($i = 0; $i <= count($luckyNumbers); $i++) {
+            echo "$luckyNumbers[$i] <br>";
+        };
     ?>
 
 
