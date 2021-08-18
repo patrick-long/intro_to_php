@@ -85,11 +85,11 @@
 
     <?php
         // Create first function in php
-        function sayHello() {
-            echo "Hello Patrick";
+        function sayHello($name) {
+            echo "Hello $name";
         };
 
-        sayHello();
+        sayHello("Patrick");
     ?>
 
 
