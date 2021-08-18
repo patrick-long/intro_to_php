@@ -71,9 +71,15 @@
 
 
     <!-- Using associative arrays -->
+
+    <form action="index.php" method="post">
+        <input type="text" name="student">
+        <input type="submit" value="Submit">
+    </form>
+
     <?php
         $grades = array("Jim" => 95, "Oscar" => 89, "Pam" => 86);
-        echo $grades["Jim"];
+        echo $grades[$_POST['student']];
     ?>
 
 
