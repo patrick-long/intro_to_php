@@ -269,33 +269,71 @@
 
 
     <?php
-        class Movie {
-            public $title;
-            private $rating;
+        // class Movie {
+        //     public $title;
+        //     private $rating;
 
-            function __construct($title, $rating) {
-                $this -> title = $title;
-                $this -> rating = $rating;
+        //     function __construct($title, $rating) {
+        //         $this -> title = $title;
+        //         $this -> rating = $rating;
+        //     }
+
+        //     function getRating() {
+        //         return $this -> rating;
+        //     }
+
+        //     function setRating($rating) {
+        //         if ($rating == "G" || $rating == "PG" || $rating == "PG-13" || $rating == "R" || $rating == "NR") {
+        //             $this -> rating = $rating;
+        //         } else {
+        //             $this -> rating = "NR";
+        //         }
+        //     }
+        // }
+
+        // $avengers = new Movie("Avengers", "PG-13");
+
+        // $avengers -> setRating(true);
+
+        // echo $avengers -> getRating();
+    ?>
+
+
+    <?php
+        class Chef {
+            function makeChicken() {
+                echo "The chef makes chicken <br>";
             }
 
-            function getRating() {
-                return $this -> rating;
+            function makeSalad() {
+                echo "The chef makes salad <br>";
             }
 
-            function setRating($rating) {
-                if ($rating == "G" || $rating == "PG" || $rating == "PG-13" || $rating == "R" || $rating == "NR") {
-                    $this -> rating = $rating;
-                } else {
-                    $this -> rating = "NR";
-                }
+            function makeSpecialDish() {
+                echo "The chef makes barbecue ribs <br>";
             }
         }
 
-        $avengers = new Movie("Avengers", "PG-13");
+        class ItalianChef extends Chef {
 
-        $avengers -> setRating(true);
+            function makeSpaghetti() {
+                echo "The Italian chef makes spaghetti <br>";
+            }
 
-        echo $avengers -> getRating();
+            function makeLasagna() {
+                echo "The Italian chef makes lasagna <br>";
+            }
+
+            function makeSpecialDish() {
+                echo "The Italian chef makes chicken parmesan <br>";
+            }
+        }
+
+        $chef = new Chef();
+        $chef -> makeSpecialDish();
+        $italianChef = new ItalianChef();
+        $italianChef -> makeSpaghetti();
+        $italianChef -> makeSpecialDish();
     ?>
 
 
