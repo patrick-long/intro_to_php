@@ -39,7 +39,7 @@
     ?> -->
 
     <!-- Create password input for talking about GET and POST methods -->
-    <form action="index.php" method="post">
+    <!-- <form action="index.php" method="post">
         Password: <input type="password" name="password">
         <input type="submit" value="Submit">
     </form>
@@ -47,6 +47,12 @@
 
     <?php
         echo $_POST['password'];
+    ?> -->
+
+
+    <!-- Work with PHP arrays -->
+    <?php
+        $friends = array('Kevin', 'Karen', 'Oscar', 'Jim');
     ?>
 
 
