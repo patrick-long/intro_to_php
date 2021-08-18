@@ -203,6 +203,11 @@
         $wordCount = 400;
 
         include "article-header.php";
+
+        include "useful-tools.php";
+        sayHello("Patrick");
+
+        echo $feetInAMile;
     ?>  
 
     <?php
