@@ -187,11 +187,9 @@
     ?>
 
     <!-- Including HTML in php -->
-    <?php
-        include "header.html";
-
-        include "footer.html";
-    ?>
+    <?php include "header.html"; ?>
+    <p>Hello World</p>
+    <?php include "footer.html"; ?>
 
 
     <?php
