@@ -212,30 +212,62 @@
 
     <!-- Working with classes and objects in php -->
     <?php
-        class Book {
-            var $title;
-            var $author;
-            var $numPages;
+        // class Book {
+        //     var $title;
+        //     var $author;
+        //     var $numPages;
 
-            function __construct($aTitle, $aAuthor, $aNumPages) {
-                $this -> title = $aTitle;
-                $this -> author = $aAuthor;
-                $this -> numPages = $aNumPages;
-            }
-        };
+        //     function __construct($aTitle, $aAuthor, $aNumPages) {
+        //         $this -> title = $aTitle;
+        //         $this -> author = $aAuthor;
+        //         $this -> numPages = $aNumPages;
+        //     }
+        // };
 
-        $book1 = new Book("Harry Potter", "J.K. Rowling", 400);
+        // $book1 = new Book("Harry Potter", "J.K. Rowling", 400);
         // $book1 -> title = "Harry Potter";
         // $book1 -> author = "J.K. Rowling";
         // $book1 -> numPages = 400;
-        echo $book1 -> title;
+        // echo $book1 -> title;
 
-        $book2 = new Book("Lord of the Rings", "J.R.R. Tolkien", 700);
+        // $book2 = new Book("Lord of the Rings", "J.R.R. Tolkien", 700);
         // $book2 -> title = "Lord of the Rings";
         // $book2 -> author = "J.R.R. Tolkien";
         // $book2 -> numPages = 700;
-        echo $book2 -> title;
+        // echo $book2 -> title;
     ?>
+
+
+    <!-- Defining object functions in php -->
+    <?php 
+        class Student {
+            var $name;
+            var $major;
+            var $gpa;
+
+            function __construct ($name, $major, $gpa) {
+                $this -> name = $name;
+                $this -> major = $major;
+                $this -> gpa = $gpa;
+            }
+
+            function hasHonors() {
+                if ($this -> gpa >= 3.5) {
+                    return "true";
+                }
+                return "false";
+            }
+        }
+
+        $student1 = new Student ("Patrick", "Computer Science", 3.75);
+        $student2 = new Student ("Abigayle", "Graphic Design", 4.0);
+
+        echo $student1 -> hasHonors();
+        echo $student2 -> hasHonors();
+
+    ?>
+
+
 
     <?php
         // $siteOwner = 'Patrick';
