@@ -135,35 +135,50 @@
     ?>
 
     <!-- Work with switch statements in php -->
-    <form action="index.php" method="post">
+    <!-- <form action="index.php" method="post">
         What grade did you get?<br>
         <input type="text" name="grade"><br>
         <input type="submit" value="Submit">
+    </form> -->
+
+    <?php
+        // $grade = $_POST['grade'];
+
+        // switch ($grade) {
+        //     case "A": 
+        //         echo "You did amazing!";
+        //         break;
+        //     case "B": 
+        //         echo "You did pretty good";
+        //         break;
+        //     case "C": 
+        //         echo "You did poorly";
+        //         break;
+        //     case "D": 
+        //         echo "You did very badly";
+        //         break;
+        //     case "F": 
+        //         echo "You failed";
+        //         break;
+        //     default: 
+        //         echo "Please type a valid grade";
+        //         break;
+        // }
+    ?>
+
+
+    <!-- Working with while loops in php -->
+    <form action="index.php" method="post">
+
     </form>
 
     <?php
-        $grade = $_POST['grade'];
+        $index = 6;
 
-        switch ($grade) {
-            case "A": 
-                echo "You did amazing!";
-                break;
-            case "B": 
-                echo "You did pretty good";
-                break;
-            case "C": 
-                echo "You did poorly";
-                break;
-            case "D": 
-                echo "You did very badly";
-                break;
-            case "F": 
-                echo "You failed";
-                break;
-            default: 
-                echo "Please type a valid grade";
-                break;
-        }
+        do {
+            echo "$index <br>";
+            $index++;
+        } while ($index <= 5);
     ?>
 
 
