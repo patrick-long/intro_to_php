@@ -95,17 +95,43 @@
 
 
         // Work with other functions in php using if statements
-        function getMax($num1, $num2, $num3) {
-            if ($num1 >= $num2 && $num1 >= $num3) {
-                return $num1;
-            } elseif ($num2 >= $num1 && $num2 >= $num3) {
-                return $num2;
-            } else {
-                return $num3;
-            };
-        };
+        // function getMax($num1, $num2, $num3) {
+        //     if ($num1 >= $num2 && $num1 >= $num3) {
+        //         return $num1;
+        //     } elseif ($num2 >= $num1 && $num2 >= $num3) {
+        //         return $num2;
+        //     } else {
+        //         return $num3;
+        //     };
+        // };
 
-        echo getMax(10000, 200, 109);
+        // echo getMax(10000, 200, 109);
+    ?>
+
+    <!-- Create a more complicated calculator -->
+    <form action="index.php" method="post">
+        Number 1: <input type="number" name="num1"><br>
+        Operator: <input type="text" name="operator"><br>
+        Number 2: <input type="number" name="num2"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <?php
+        $num1 = $_POST['num1'];
+        $num2 = $_POST['num2'];
+        $operator = $_POST['operator'];
+
+        if ($operator == "+") {
+            echo $num1 + $num2;
+        } elseif ($operator == "-") {
+            echo $num1 - $num2;
+        } elseif ($operator == "*") {
+            echo $num1 * $num2;
+        } elseif ($operator == "/") {
+            echo $num1 / $num2; 
+        } else {
+            echo "Invalid operator";
+        };
     ?>
 
 
