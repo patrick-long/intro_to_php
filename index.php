@@ -216,19 +216,25 @@
             var $title;
             var $author;
             var $numPages;
+
+            function __construct($aTitle, $aAuthor, $aNumPages) {
+                $this -> title = $aTitle;
+                $this -> author = $aAuthor;
+                $this -> numPages = $aNumPages;
+            }
         };
 
-        $book1 = new Book;
-        $book1 -> title = "Harry Potter";
-        $book1 -> author = "J.K. Rowling";
-        $book1 -> numPages = 400;
-        echo $book1->numPages;
+        $book1 = new Book("Harry Potter", "J.K. Rowling", 400);
+        // $book1 -> title = "Harry Potter";
+        // $book1 -> author = "J.K. Rowling";
+        // $book1 -> numPages = 400;
+        echo $book1 -> title;
 
-        $book2 = new Book;
-        $book2 -> title = "Lord of the Rings";
-        $book2 -> author = "J.R.R. Tolkien";
-        $book2 -> numPages = 700;
-        echo $book2->numPages;
+        $book2 = new Book("Lord of the Rings", "J.R.R. Tolkien", 700);
+        // $book2 -> title = "Lord of the Rings";
+        // $book2 -> author = "J.R.R. Tolkien";
+        // $book2 -> numPages = 700;
+        echo $book2 -> title;
     ?>
 
     <?php
