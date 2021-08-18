@@ -86,12 +86,12 @@
     <?php
         // Create first function in php
         function sayHello($name, $age) {
-            echo "Hello $name, you are $age <br>";
+            return "Hello $name, you are $age <br>";
         };
 
-        sayHello("Patrick", 23);
-        sayHello("Mike", 45);
-        sayHello("Andrew", 37);
+        echo sayHello("Patrick", 23);
+        echo sayHello("Mike", 45);
+        echo sayHello("Andrew", 37);
     ?>
 
 
