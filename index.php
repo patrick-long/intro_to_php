@@ -56,17 +56,24 @@
         // echo $friends[0];
     ?>
 
-
-    <form action="index.php" method="post">
+    <!-- Using checkboxes and gathering its data -->
+    <!-- <form action="index.php" method="post">
         Apples: <input type="checkbox" name="fruits[]" value="apples"><br>
         Oranges: <input type="checkbox" name="fruits[]" value="oranges"><br>
         Pears: <input type="checkbox" name="fruits[]" value="pears"><br>
         <input type="submit" value="Submit">
-    </form>
+    </form> -->
 
     <?php 
-        $fruits = $_POST['fruits'];
-        echo $fruits[0];
+        // $fruits = $_POST['fruits'];
+        // echo $fruits[0];
+    ?>
+
+
+    <!-- Using associative arrays -->
+    <?php
+        $grades = array("Jim" => 95, "Oscar" => 89, "Pam" => 86);
+        echo $grades["Jim"];
     ?>
 
 
