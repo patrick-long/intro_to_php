@@ -223,6 +223,12 @@
         $book1 -> author = "J.K. Rowling";
         $book1 -> numPages = 400;
         echo $book1->numPages;
+
+        $book2 = new Book;
+        $book2 -> title = "Lord of the Rings";
+        $book2 -> author = "J.R.R. Tolkien";
+        $book2 -> numPages = 700;
+        echo $book2->numPages;
     ?>
 
     <?php
