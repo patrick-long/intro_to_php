@@ -85,13 +85,25 @@
 
     <?php
         // Create first function in php
-        function sayHello($name, $age) {
-            return "Hello $name, you are $age <br>";
+        // function sayHello($name, $age) {
+        //     return "Hello $name, you are $age <br>";
+        // };
+
+        // echo sayHello("Patrick", 23);
+        // echo sayHello("Mike", 45);
+        // echo sayHello("Andrew", 37);
+
+
+        // Work with other functions in php using if statements
+        function getMax($num1, $num2) {
+            if ($num1 > $num2) {
+                return $num1;
+            } else {
+                return $num2;
+            };
         };
 
-        echo sayHello("Patrick", 23);
-        echo sayHello("Mike", 45);
-        echo sayHello("Andrew", 37);
+        echo getMax(10, 2);
     ?>
 
 
