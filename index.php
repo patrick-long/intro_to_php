@@ -8,6 +8,7 @@
 </head>
 <body>
 
+
     <!-- <form action="index.php" method="get">
         Name:
         <input type="text" name="name" placeholder='e.g. "Patrick"'>
