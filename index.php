@@ -340,13 +340,13 @@
 
 
     <?php
-        // $siteOwner = 'Patrick';
-        // echo("<h1>$siteOwner's site</h1>");
-        // echo "<hr>";
-        // echo "<p>This is my site</p>";
+        $siteOwner = 'Patrick';
+        echo("<h1>$siteOwner's site</h1>");
+        echo "<hr>";
+        echo "<p>This is my site</p>";
 
-        // echo "<h4>Working with string modifications</h4>";
-        // echo strtolower($siteOwner);
+        echo "<h4>Working with string modifications</h4>";
+        echo strtolower($siteOwner);
         // echo "<br>";
         // echo strtoupper($siteOwner);
         // echo "<br>";
