@@ -347,16 +347,16 @@
 
         echo "<h4>Working with string modifications</h4>";
         echo strtolower($siteOwner);
-        // echo "<br>";
-        // echo strtoupper($siteOwner);
-        // echo "<br>";
-        // echo $siteOwner[0];
-        // echo "<br>";
-        // echo str_replace('Patrick', 'Abigayle', $siteOwner);
-        // echo "<br>";
-        // echo substr($siteOwner, 0, 3);
-        // echo "<br>";
-        // echo "<br>";
+        echo "<br>";
+        echo strtoupper($siteOwner);
+        echo "<br>";
+        echo $siteOwner[0];
+        echo "<br>";
+        echo str_replace('Patrick', 'Abigayle', $siteOwner);
+        echo "<br>";
+        echo substr($siteOwner, 0, 3);
+        echo "<br>";
+        echo "<br>";
 
 
         // Working with data types in php
