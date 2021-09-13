@@ -270,33 +270,33 @@
 
 
     <?php
-        // class Movie {
-        //     public $title;
-        //     private $rating;
+        class Movie {
+            public $title;
+            private $rating;
 
-        //     function __construct($title, $rating) {
-        //         $this -> title = $title;
-        //         $this -> rating = $rating;
-        //     }
+            function __construct($title, $rating) {
+                $this -> title = $title;
+                $this -> rating = $rating;
+            }
 
-        //     function getRating() {
-        //         return $this -> rating;
-        //     }
+            function getRating() {
+                return $this -> rating;
+            }
 
-        //     function setRating($rating) {
-        //         if ($rating == "G" || $rating == "PG" || $rating == "PG-13" || $rating == "R" || $rating == "NR") {
-        //             $this -> rating = $rating;
-        //         } else {
-        //             $this -> rating = "NR";
-        //         }
-        //     }
-        // }
+            function setRating($rating) {
+                if ($rating == "G" || $rating == "PG" || $rating == "PG-13" || $rating == "R" || $rating == "NR") {
+                    $this -> rating = $rating;
+                } else {
+                    $this -> rating = "NR";
+                }
+            }
+        }
 
-        // $avengers = new Movie("Avengers", "PG-13");
+        $avengers = new Movie("Avengers", "PG-13");
 
-        // $avengers -> setRating(true);
+        $avengers -> setRating(true);
 
-        // echo $avengers -> getRating();
+        echo $avengers -> getRating();
     ?>
 
 
