@@ -361,7 +361,7 @@
 
         // Working with data types in php
         // Strings
-        // $phrase = 'To be or not to be';
+        $phrase = 'To be or not to be';
 
         // Numbers
         // $age = 30;
